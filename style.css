@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+/* font-family: 'Signika Negative', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+/* font-family: 'Freehand', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+/* font-family: 'Fasthand', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+/* up==>> light font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+/* font-family: 'Tajawal', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* font-family: 'Dancing Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+/* font-family: 'Agdasima', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+/* font-family: 'Tektur', cursive; */
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html , body {
+   width: 100%;
+   height: 100%;
+   font-family: 'Tektur', cursive;
+}
+
+#main{
+   background-color: rgb(15, 13, 13);
+   /* don't give any height and width of wrapper tag */
+}
+
+/*  =====================>>>>>>> start page1 <<<<<<<=============================== */
+#main>.page1{
+   position: relative;
+   top: 0;
+   width: 100vw;
+   min-height: 50vh;
+}
+
+/* ====== page1 navbar ========*/
+#main>.page1>nav{
+   position: relative;
+   width: 100vw;
+   height: 65px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 30px;
+   z-index: 100000000;
+   /* background-color: blue; */
+}
+#main>.page1>nav>.logo{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 10000;
+}
+#main>.page1>nav>.logo>svg{
+   width:35.57px;
+   height:22.6px;
+}
+#main>.page1>nav>.links{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   /* background-color: red; */
+}
+/* >> toggle it << */
+#main>.page1>nav>.link_lessThan_1025{
+   flex-direction: column;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(237, 191, 255);
+   z-index: 1;
+   /* >> change below << */
+   display: flex;
+}
+#main>.page1>nav>.links>h3{
+   margin-left: 5px;
+}
+
+#main>.page1>nav>.links>h3>.more_1025{
+   font-size: 14px;
+   color: white;
+   text-decoration: none;
+   font-weight: 300;
+}
+/* >> toggle it << */
+#main>.page1>nav>.links>h3>.less_1025{
+   font-size: 25px;
+   color: black;
+   text-decoration: none;
+   font-weight: 500;
+   line-height: 50px;
+}
+
+#main>.page1>nav>.links>h3>.border_toggle_more{
+   border-bottom:1px solid white;
+}
+/* ==>>Home border toggle it <<== */
+#main>.page1>nav>.links>h3>.border_toggle_less{
+   border-bottom:1px solid black;
+}
+#main>.page1>nav>.menu_wrapper{
+   /* background-color: red; */
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#main>.page1>nav>.menu_wrapper>.menu{
+   position: absolute;
+   z-index: 100;
+}
+#main>.page1>nav>.menu_wrapper>.menu>svg{
+   width: 30px;
+   height: 25px;
+   fill: white;
+}
+#main>.page1>nav>.menu_wrapper>.menu1{
+   position: absolute;
+   z-index: 100;
+}
+#main>.page1>nav>.menu_wrapper>.menu1>svg{
+   width: 30px;
+   height: 25px;
+   fill: white;
+}
+#main>.page1>nav>.menu_wrapper>.circle{
+   width: 15px;
+   height: 15px;
+   background-color: white;
+   border-radius: 50%;
+}
+/* ==>> page1 text part <<== */
+
+#main>.page1>.txt{
+   position: relative;
+   /* background-color: red; */
+   width: 100vw;
+   height: 42vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#main>.page1>.txt>.txt_top{
+   position: relative;
+   width: 100vw;
+   height: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-size: 5vw;
+   font-weight: 100;
+   color: white;
+}
+
+#main>.page1>.txt>.txt_top>.txt_upper{
+   position: relative;
+   height: 50%;
+   width: auto;
+   overflow: hidden;
+}
+#main>.page1>.txt>.txt_top>.txt_upper>.page1_hover_hidden{
+   position: relative;
+   transform-origin: -10% 50%;
+   transform: rotate(5deg);
+}
+#main>.page1>.txt>.txt_top>.txt_lower{
+   height: 50%;
+   width: auto;
+   overflow: hidden;
+}
+#main>.page1>.txt>.txt_top>.txt_lower>.page1_hover_hidden{
+   position: relative;
+   height: 100%;
+   transform-origin: -10% 50%;
+   transform: rotateZ(5deg);
+   -webkit-transform: rotateZ(5deg);
+   -moz-transform: rotateZ(5deg);
+   -ms-transform: rotateZ(5deg);
+   -o-transform: rotateZ(5deg);
+}
+
+#main>.page1>.txt>.txt_bottom{
+   width: 100vw;
+   height: 25%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+   padding-top: 20px;
+   font-size: 1.2vw;
+   font-weight: 100;
+   color: white;
+}
+
+/* ==========================page2 ========================= */
+
+#main>.page2{
+   position: relative;
+   width: 100vw;
+   height: 51vw;
+   background-color: rgb(15, 13, 13);
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+#main>.page2>video{
+   height: 60%;
+   width: 60%;
+}
+@media screen and (max-width: 1025px){
+   #main>.page2{
+      width: 100vw;
+      height: 150vh;
+   }
+}
+
+/* ==========================page3 ========================= */
+#main>.page3{
+   position: relative;
+   width: 100vw;
+   height: 400vh;
+   background-color: rgb(15, 13, 13);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

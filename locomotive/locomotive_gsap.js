@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"), //give main wrapper tag name
   smooth: true,
+  smoothMobile: true,
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 
